@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded",() => {
             cardChoosenId.push(cardSelected);
             this.setAttribute("src",cards[cardSelected].img);
             if(cardChoosen.length==2){
-                setInterval(checkMatch,500);
+                setTimeout(checkMatch,500);
             }
         }
     }
