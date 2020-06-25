@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded",() => {
     var grid = document.querySelector(".grid");
 
     for(let i=0;i<cards.length;i++){
-        let newcard = createElement("img");
+        let newcard = document.createElement("img");
         newcard.setAttribute("src","images/default.png");
         newcard.setAttribute("id",i);
         newcard.setAttribute("onclick","flipCard");
