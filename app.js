@@ -32,6 +32,10 @@ document.addEventListener("DOMContentLoaded",() => {
             grid.appendChild(newcard);
         }
     }
+    function playAgain(){
+        location.reload();
+    }
+
     function checkMatch(){
         if(cardChoosen[0]===cardChoosen[1]){
             document.getElementById(cardChoosenId[0]).setAttribute('src',"images/blank.png");
@@ -46,6 +50,13 @@ document.addEventListener("DOMContentLoaded",() => {
         if(cardWon.length==cards.length/2){
             document.getElementById("result").textContent=" Congratualation!!! you won";
             document.getElementById("result").style.color="green";
+            var btn= document.createElement("input");
+            btn.setAttribute("type","button");
+            btn.setAttribute("value","Play Again");
+            btn.setAttribute("class","input");
+            btn.addEventListener("click",playAgain);
+            document.querySelector("body").appendChild(btn);
+            grid.remove();
         }
        cardChoosen=[];
        cardChoosenId=[]; 

@@ -4,3 +4,17 @@
     height: 100px;
     width: 300px;
 }
+
+.input{
+    background: blueviolet;
+    color: white;
+    padding: 10px;
+    margin-left: 50px;
+    border: 1px solid;
+}
+.input:hover{
+    background: aliceblue;
+    color: black;
+    cursor: pointer;
+    border: 1px solid;
+}
