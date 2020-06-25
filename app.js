@@ -68,8 +68,10 @@ document.addEventListener("DOMContentLoaded",() => {
             cardChoosen.push(cards[cardSelected].name);
             cardChoosenId.push(cardSelected);
             this.setAttribute("src",cards[cardSelected].img);
-            if(cardChoosen.length==2){
-                setTimeout(checkMatch,500);
+            this.onload =function(){
+                if(cardChoosen.length==2){
+                    setTimeout(checkMatch,500);
+                }
             }
         }
     }
